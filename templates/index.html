@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Sweet Mahi 💘</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+  <!-- Background Music -->
+  <audio id="bg-music" loop>
+    <source src="{{ url_for('static', filename='music.mp3') }}" type="audio/mpeg">
+  </audio>
+
+  <button id="music-toggle" class="music-btn">🔊</button>
+
+  <!-- Falling hearts container -->
+  <div class="hearts"></div>
+
+  <div class="container">
+    <h1>Mahi 💘 Smit</h1>
+    <p class="subtitle">I made this just for you, hope you will like it.</p>
+
+    <!-- Main Photo -->
+    <div class="photo-wrap">
+      <img src="{{ url_for('static', filename='us.jpg') }}" alt="Us">
+      <p class="caption">One of my favourite moments with you 🤍</p>
+    </div>
+
+    <!-- Memories slider -->
+    <div class="memories-wrap">
+  <div class="memories-track">
+
+    <!-- ORIGINAL SET -->
+    <div class="memory-card">
+      <img src="{{ url_for('static', filename='2.jpg') }}" alt="">
+      <p>With you, even simple moments feel special 🤍</p>
+    </div>
+    <div class="memory-card">
+      <img src="{{ url_for('static', filename='3.jpg') }}" alt="">
+      <p>Your smile is my favourite view ✨</p>
+    </div>
+    <div class="memory-card">
+      <img src="{{ url_for('static', filename='4.jpg') }}" alt="">
+      <p>Anywhere with you feels like home 🏡</p>
+    </div>
+    <div class="memory-card">
+      <img src="{{ url_for('static', filename='5.jpg') }}" alt="">
+      <p>Always happy with you ☹️</p>
+    </div>
+    <!-- DUPLICATE SET (for infinite loop) -->
+    <div class="memory-card">
+      <img src="{{ url_for('static', filename='2.jpg') }}" alt="">
+      <p>With you, even simple moments feel special 🤍</p>
+    </div>
+    <div class="memory-card">
+      <img src="{{ url_for('static', filename='3.jpg') }}" alt="">
+      <p>Your smile is my favourite view ✨</p>
+    </div>
+    <div class="memory-card">
+      <img src="{{ url_for('static', filename='4.jpg') }}" alt="">
+      <p>Anywhere with you feels like home 🏡</p>
+    </div>
+    <div class="memory-card">
+      <img src="{{ url_for('static', filename='5.jpg') }}" alt="">
+      <p>Always happy with you ☹️</p>
+
+  </div>
+</div>
+
+    <!-- Anniversary -->
+    <div class="pyramid-cards">
+      <div class="anniversary pyramid-top">
+        <div class="anniv-title">Our Day 🤍</div>
+        <div class="anniv-date">11 December 2025</div>
+        <div class="anniv-caption">The day we first saw eachother 💫</div>
+      </div>
+
+      <div class="card pyramid-mid">
+        <p>
+          Even on ordinary days, you make my world feel a little softer, a little warmer,
+          and a lot brighter.
+        </p>
+        <p>
+          I am so grateful for every moment we have shared, and I can't wait to create many more beautiful memories with you.
+      </div>
+
+      <div class="card pyramid-bottom">
+        <p>
+          So I wanted to ask you something...🤫
+        </p>
+        <p>
+          I waited to ask you this properly in my way, Thats why it took sometime.😔
+        </p>
+        <p>
+          I really want to spend the "FOREVER" with you.🩷
+        </p>
+        <p>
+            PLEASE SAY YES !!!! ☹️
+      </div>
+    </div>
+
+    <!-- Valentine Question -->
+    <div class="valentine-container" id="valentine">
+      <h2 class="big-question glow-text">Will you be my Valentine? 💍</h2>
+      <div class="buttons glow-buttons">
+        <button class="yes glow-btn">Yes 💕</button>
+        <button class="no glow-btn">No 🙈</button>
+      </div>
+    </div>
+
+    <!-- Hidden reveal -->
+    <div id="revealPhoto" class="reveal-photo hidden">
+      <img src="{{ url_for('static', filename='us2.jpg') }}" alt="">
+      <p class="caption special-caption">Us, and many more memories to come 💫</p>
+    </div>
+
+    <div id="response" class="response hidden">
+      <p class="yay">You just made my day (and my heart) very happy 🥹❤️</p>
+      <p class="sign">
+    I will love you forever and always, no matter what.
+  </p>
+        <p class="sign">
+        Always yours,<br>
+        <strong>Smit 🤍</strong>
+      </p>
+      <a href="https://wa.me/919869187676" class="talk-btn">Text me? 💬</a>
+    </div>
+
+    <!-- Yes click sound -->
+    <audio id="yesSound">
+      <source src="{{ url_for('static', filename='yes.mp3') }}" type="audio/mpeg">
+    </audio>
+  </div>
+
+  <!-- JS -->
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
