@@ -861,3 +861,14 @@ button.yes {
     max-width: calc(100vw - 16px);
   }
 }
+
+/* Fix iPhone Safari white background bug */
+html, body {
+  background-color: #0f0409;
+  min-height: 100%;
+}
+
+/* Prevent cards/glow getting cut on mobile */
+body {
+  overflow-x: hidden;
+}
